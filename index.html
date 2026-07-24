@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sana Niaz - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="stars" id="stars"></div>
+
+<!-- Airplanes -->
+<div class="plane plane1">✈</div>
+<div class="plane plane2">✈</div>
+<div class="plane plane3">✈</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">SANA NIAZ</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-text">
+        <span class="badge">Software & Game Developer</span>
+        <h1>Building Reliable <span class="highlight">Software</span> & Interactive Games</h1>
+        <p>Turning ideas into functional applications and games — with clean code, 
+        strong database logic, and a focus on real-world problem solving.</p>
+        <div class="btn-group">
+            <a href="#projects" class="btn btn-solid">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="glow-ring">
+          <img src="profile.jpg" alt="Sana Niaz">
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a BS Information Technology student with a strong foundation in programming, 
+    database systems, and software design. My core interest lies in building functional, 
+    well-structured applications — from database-driven systems to multiplayer mobile games.</p>
+    <p>Beyond coding, I have practical exposure to computer networking concepts and data 
+    structures & algorithms, which help me write efficient, logically sound solutions. 
+    I'm also comfortable with the Microsoft Office suite and technical documentation, 
+    which I regularly use to plan, document, and present my project work clearly.</p>
+    <p>I enjoy learning by building — whether it's a backend system, a game mechanic, 
+    or the UI for an app — and I'm always working toward writing cleaner, more 
+    maintainable code.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <h3 class="skill-subheading">Languages & Web</h3>
+    <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C#</li>
+        <li>C++</li>
+    </ul>
+
+    <h3 class="skill-subheading">Development & Tools</h3>
+    <ul class="skills-list">
+        <li>App Development</li>
+        <li>Game Development (Unity)</li>
+        <li>Firebase</li>
+        <li>Database Management (SQL/Oracle)</li>
+    </ul>
+
+    <h3 class="skill-subheading">Core Concepts & Other Skills</h3>
+    <ul class="skills-list">
+        <li>Data Structures & Algorithms</li>
+        <li>Computer Networking</li>
+        <li>Technical Documentation</li>
+        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+    </ul>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>DesiHub — Multiplayer Android Game</h3>
+        <p>A multiplayer mobile game built in Unity, featuring multiple mini-games including 
+        Tic Tac Toe, Bingo, Name Place Thing, Hangman, and Badshah Wazeer. Implemented 
+        real-time data and a global leaderboard using Firebase Realtime Database, user 
+        authentication via Firebase, and push notifications through OneSignal. UI/UX 
+        designed in Canva for a clean, modern player experience.</p>
+        <a href="#">GitHub Link</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>A database-driven desktop system to manage library operations including book 
+        cataloging, member registration, and issue/return tracking — built using Oracle SQL 
+        with a focus on structured, reliable data handling.</p>
+        <a href="#">GitHub Link</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Personal Web Portfolio</h3>
+        <p>This very portfolio — designed and built from scratch using HTML, CSS, and 
+        JavaScript, featuring a custom animated background, interactive UI elements, 
+        and a fully responsive layout.</p>
+        <a href="#">GitHub Link</a>
+    </div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-subtext">Let's connect and build something great together.</p>
+    <div class="contact-cards">
+
+        <a href="mailto:your-email@example.com" class="contact-card">
+            <div class="contact-icon mail-icon">✉</div>
+            <h4>Email</h4>
+            <p>niazsana557@gmail.com</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+            <div class="contact-icon linkedin-icon">in</div>
+            <h4>LinkedIn</h4>
+            <p>www.linkedin.com/in/sana-niaz-291053365</p>
+        </a>
+
+        <a href="https://wa.me/923XXXXXXXXX" target="_blank" class="contact-card">
+            <div class="contact-icon whatsapp-icon">☎</div>
+            <h4>WhatsApp</h4>
+            <p>923055006113</p>
+        </a>
+
+    </div>
+</section><!-- Contact Section -->
+
+
+<script>
+  const starsContainer = document.getElementById('stars');
+  for (let i = 0; i < 100; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    star.style.top = Math.random() * 100 + '%';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.animationDelay = Math.random() * 3 + 's';
+    starsContainer.appendChild(star);
+  }
+</script>
+</body>
+</html>
