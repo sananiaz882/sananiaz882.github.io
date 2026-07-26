@@ -9,29 +9,38 @@
 </head>
 <body>
 <div class="stars" id="stars"></div>
-
-<!-- Airplanes -->
 <div class="plane plane1">✈</div>
 <div class="plane plane2">✈</div>
 <div class="plane plane3">✈</div>
 
-<!-- Navbar -->
+<!-- Floating side icon nav -->
+<div class="side-nav">
+    <a href="#home" title="Home">🏠</a>
+    <a href="#about" title="About">👤</a>
+    <a href="#skills" title="Skills">💻</a>
+    <a href="#certificates" title="Certificates">🎓</a>
+    <a href="#experience" title="Experience">💼</a>
+    <a href="#projects" title="Projects">🚀</a>
+    <a href="#contact" title="Contact">✉</a>
+</div>
+
 <nav class="navbar">
     <div class="logo">SANA NIAZ</div>
     <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Hero Section -->
-<header class="hero">
+<header class="hero" id="home">
     <div class="hero-text">
         <span class="badge">Software & Game Developer</span>
         <h1>Building Reliable <span class="highlight">Software</span> & Interactive Games</h1>
-        <p>Turning ideas into functional applications and games — with clean code, 
+        <p>Turning ideas into functional applications and games — with clean code,
         strong database logic, and a focus on real-world problem solving.</p>
         <div class="btn-group">
             <a href="#projects" class="btn btn-solid">View My Work</a>
@@ -39,8 +48,14 @@
         </div>
     </div>
     <div class="hero-image">
-        <div class="glow-ring">
-          <img src="profile.jpg" alt="Sana Niaz">
+        <div class="orbit-wrap">
+            <div class="glow-ring">
+                <img src="profile.jpg" alt="Sana Niaz">
+            </div>
+            <div class="orbit orbit1"><span class="orbit-icon">&lt;/&gt;</span></div>
+            <div class="orbit orbit2"><span class="orbit-icon">🎮</span></div>
+            <div class="orbit orbit3"><span class="orbit-icon">🗄</span></div>
+            <div class="orbit orbit4"><span class="orbit-icon">⚙</span></div>
         </div>
     </div>
 </header>
@@ -48,103 +63,166 @@
 <!-- About Section -->
 <section id="about">
     <h2>About Me</h2>
-    <p>I'm a BS Information Technology student with a strong foundation in programming, 
-    database systems, and software design. My core interest lies in building functional, 
-    well-structured applications — from database-driven systems to multiplayer mobile games.</p>
-    <p>Beyond coding, I have practical exposure to computer networking concepts and data 
-    structures & algorithms, which help me write efficient, logically sound solutions. 
-    I'm also comfortable with the Microsoft Office suite and technical documentation, 
-    which I regularly use to plan, document, and present my project work clearly.</p>
-    <p>I enjoy learning by building — whether it's a backend system, a game mechanic, 
-    or the UI for an app — and I'm always working toward writing cleaner, more 
-    maintainable code.</p>
+    <p class="about-role">I'm <strong>Sana Niaz</strong>, Software & Game Developer</p>
+    <p id="typewriter-text"></p>
+
+    <h3 class="mini-heading">What I Do</h3>
+    <div class="whatido-grid">
+        <div class="whatido-card">
+            <div class="whatido-icon">🖥</div>
+            <h4>App Development</h4>
+            <p>Building functional, database-driven applications with clean architecture.</p>
+        </div>
+        <div class="whatido-card">
+            <div class="whatido-icon">🎮</div>
+            <h4>Game Development</h4>
+            <p>Creating multiplayer mobile games in Unity with real-time features.</p>
+        </div>
+        <div class="whatido-card">
+            <div class="whatido-icon">🌐</div>
+            <h4>Web Development</h4>
+            <p>Designing responsive, interactive websites from scratch.</p>
+        </div>
+    </div>
+
+    <h3 class="mini-heading">Highlights</h3>
+    <div class="highlights-grid">
+        <div class="highlight-circle">
+            <span class="num">7+</span>
+            <span class="label">Languages</span>
+        </div>
+        <div class="highlight-circle">
+            <span class="num">3</span>
+            <span class="label">Projects</span>
+        </div>
+        <div class="highlight-circle">
+            <span class="num">2</span>
+            <span class="label">Certificates</span>
+        </div>
+    </div>
 </section>
 
 <!-- Skills Section -->
+
+       <!-- Skills Section -->
+<!-- Skills Section -->
 <section id="skills">
     <h2>Skills</h2>
+    <div class="robot-skills-wrap">
+        <img src="robot-hands.jpg" alt="Robotic Hands" class="hands-img">
+        <div class="skills-marquee">
+            <div class="skills-track-h">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Java</span>
+                <span>Python</span><span>C#</span><span>C++</span><span>Unity</span>
+                <span>Firebase</span><span>SQL / Oracle</span><span>Data Structures</span>
+                <span>Networking</span><span>Documentation</span><span>MS Office</span>
+                <span>Digital Marketing</span><span>Freelancing</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Java</span>
+                <span>Python</span><span>C#</span><span>C++</span><span>Unity</span>
+                <span>Firebase</span><span>SQL / Oracle</span><span>Data Structures</span>
+                <span>Networking</span><span>Documentation</span><span>MS Office</span>
+                <span>Digital Marketing</span><span>Freelancing</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <h3 class="skill-subheading">Languages & Web</h3>
-    <ul class="skills-list">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>C#</li>
-        <li>C++</li>
-    </ul>
+<!-- Certificates Section -->
+<section id="certificates">
+    <h2>Certificates</h2>
+    <div class="cert-grid">
+        <div class="cert-card">
+            <div class="cert-icon">🎓</div>
+            <h3>Digital Marketing</h3>
+            <p>Certification covering core digital marketing concepts including social media
+            strategy, content marketing, and online audience engagement.</p>
+             <a href="digital markting.png" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <div class="cert-icon">💼</div>
+            <h3>Freelancing</h3>
+            <p>Certification covering the fundamentals of freelancing — client communication,
+            proposal writing, and managing independent projects professionally.</p>
+             <a href="freelancing.png" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <div class="cert-icon">🔍</div>
+            <h3>SEO</h3>
+            <p>Certification covering search engine optimization — keyword research, on-page
+            optimization, and improving website visibility in search results.</p>
+            <a href="#" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+            <div class="cert-icon">📢</div>
+            <h3>Google Ads</h3>
+            <p>Certification covering Google Ads fundamentals — campaign setup, keyword
+            targeting, and running effective paid ad campaigns.</p>
+            <a href="googlADS .png" target="_blank">View Certificate</a>
+        </div>
+    </div>
+</section>
 
-    <h3 class="skill-subheading">Development & Tools</h3>
-    <ul class="skills-list">
-        <li>App Development</li>
-        <li>Game Development (Unity)</li>
-        <li>Firebase</li>
-        <li>Database Management (SQL/Oracle)</li>
-    </ul>
 
-    <h3 class="skill-subheading">Core Concepts & Other Skills</h3>
-    <ul class="skills-list">
-        <li>Data Structures & Algorithms</li>
-        <li>Computer Networking</li>
-        <li>Technical Documentation</li>
-        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
-    </ul>
+<!-- Experience Section -->
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-card">
+        <div class="exp-dot"></div>
+        <div class="exp-content">
+            <h3>Brand Ambassador</h3>
+            <p class="exp-company"><a href="https://data-crumbs.tech/" target="_blank">Data Crumb ↗</a></p>
+            <p>Representing and promoting Data Crumb's programs, engaging with the student
+            community, and helping expand outreach through digital platforms.</p>
+        </div>
+    </div>
 </section>
 
 <!-- Projects Section -->
 <section id="projects">
     <h2>Projects</h2>
-
     <div class="project-card">
         <h3>DesiHub — Multiplayer Android Game</h3>
-        <p>A multiplayer mobile game built in Unity, featuring multiple mini-games including 
-        Tic Tac Toe, Bingo, Name Place Thing, Hangman, and Badshah Wazeer. Implemented 
-        real-time data and a global leaderboard using Firebase Realtime Database, user 
-        authentication via Firebase, and push notifications through OneSignal. UI/UX 
+        <p>A multiplayer mobile game built in Unity, featuring multiple mini-games including
+        Tic Tac Toe, Bingo, Name Place Thing, Hangman, and Badshah Wazeer. Implemented
+        real-time data and a global leaderboard using Firebase Realtime Database, user
+        authentication via Firebase, and push notifications through OneSignal. UI/UX
         designed in Canva for a clean, modern player experience.</p>
-       
     </div>
-
     <div class="project-card">
         <h3>Library Management System</h3>
-        <p>A database-driven desktop system to manage library operations including book 
-        cataloging, member registration, and issue/return tracking — built using Oracle SQL 
+        <p>A database-driven desktop system to manage library operations including book
+        cataloging, member registration, and issue/return tracking — built using Oracle SQL
         with a focus on structured, reliable data handling.</p>
-        
     </div>
-
     <div class="project-card">
         <h3>Personal Web Portfolio</h3>
-        <p>This very portfolio — designed and built from scratch using HTML, CSS, and 
-        JavaScript, featuring a custom animated background, interactive UI elements, 
+        <p>web portfolio — designed and built from scratch using HTML, CSS, and
+        JavaScript, featuring a custom animated background, interactive UI elements,
         and a fully responsive layout.</p>
-        
     </div>
 </section>
+
 <!-- Contact Section -->
 <section id="contact">
     <h2>Contact Me</h2>
     <p class="contact-subtext">Let's connect and build something great together.</p>
     <div class="contact-cards">
-
         <a href="mailto:your-email@example.com" class="contact-card">
             <div class="contact-icon mail-icon">✉</div>
             <h4>Email</h4>
-            <p>niazsana557@gmail.com</p>
+            <p>niazsana557gmail.com</p>
         </a>
-
         <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-card">
             <div class="contact-icon linkedin-icon">in</div>
             <h4>LinkedIn</h4>
-            <p>www.linkedin.com/in/sana-niaz-291053365</p>
+            <p>www.linkedin.com/in/sana-niaz-2910533</p>
         </a>
-
-       
-
     </div>
-</section><!-- Contact Section -->
+</section>
 
+<footer class="site-footer">
+    <p>&copy; 2026 Sana Niaz. All rights reserved.</p>
+</footer>
 
 <script>
   const starsContainer = document.getElementById('stars');
@@ -156,6 +234,31 @@
     star.style.animationDelay = Math.random() * 3 + 's';
     starsContainer.appendChild(star);
   }
+
+  const aboutText = "I'm a BS Information Technology student with a strong foundation in programming, database systems, and software design. My core interest lies in building functional, well-structured applications — from database-driven systems to multiplayer mobile games. Beyond coding, I have practical exposure to computer networking concepts and data structures & algorithms, which help me write efficient, logically sound solutions. I'm also comfortable with the Microsoft Office suite and technical documentation, which I regularly use to plan, document, and present my project work clearly. I enjoy learning by building — whether it's a backend system, a game mechanic, or the UI for an app — and I'm always working toward writing cleaner, more maintainable code.";
+
+  const typewriterEl = document.getElementById('typewriter-text');
+  let charIndex = 0;
+
+  function typeWriter() {
+    if (charIndex < aboutText.length) {
+      typewriterEl.textContent += aboutText.charAt(charIndex);
+      charIndex++;
+      setTimeout(typeWriter, 15);
+    }
+  }
+
+  const aboutSection = document.getElementById('about');
+  let hasTyped = false;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasTyped) {
+        typeWriter();
+        hasTyped = true;
+      }
+    });
+  }, { threshold: 0.3 });
+  observer.observe(aboutSection);
 </script>
 </body>
 </html>
